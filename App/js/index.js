@@ -97,11 +97,12 @@ xui.Class('App', 'xui.Module',{
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"ctl_htmlbutton7")
-                .setDesc("URL Test 2")
+                .setDesc("100%")
                 .setLeft("0.75em")
                 .setTop("6.666666666666667em")
                 .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
+                .setHeight("2.5833333333333335em")
+                .setZIndex(0)
                 .setCaption("100%")
                 .onClick([
                     {
@@ -118,44 +119,46 @@ xui.Class('App', 'xui.Module',{
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton8")
-                .setDesc("URL Test 3")
-                .setLeft("9.916666666666666em")
-                .setTop("6.666666666666667em")
+                .setHost(host,"xui_ui_htmlbutton7")
+                .setDesc("20%")
+                .setLeft("19.166666666666668em")
+                .setTop("6.75em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("50%")
+                .setZIndex(0)
+                .setCaption("20%")
                 .onClick([
                     {
-                        "desc":"email",
+                        "desc":"blank",
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "https://maker.ifttt.com/trigger/50/with/key/cZhURO8ZUCy_fBKz5hotEe"
+                            "https://maker.ifttt.com/trigger/20/with/key/cZhURO8ZUCy_fBKz5hotEe"
                         ],
-                        "method":"mailTo"
+                        "method":"open--_blank"
                     }
                 ])
             );
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton47")
-                .setDesc("URL Test 3")
-                .setLeft("19.166666666666668em")
-                .setTop("6.666666666666667em")
+                .setHost(host,"xui_ui_htmlbutton8")
+                .setDesc("50%")
+                .setLeft("10em")
+                .setTop("6.75em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("20%")
+                .setZIndex(0)
+                .setCaption("50%")
                 .onClick([
                     {
-                        "desc":"email",
+                        "desc":"blank",
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "https://maker.ifttt.com/trigger/25/with/key/cZhURO8ZUCy_fBKz5hotEe"
+                            "https://maker.ifttt.com/trigger/50/with/key/cZhURO8ZUCy_fBKz5hotEe"
                         ],
-                        "method":"mailTo"
+                        "method":"open--_blank"
                     }
                 ])
             );
