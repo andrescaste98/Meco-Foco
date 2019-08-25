@@ -102,14 +102,14 @@ xui.Class('App', 'xui.Module',{
                 .setTop("6.666666666666667em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("URL Test 2")
+                .setCaption("100%")
                 .onClick([
                     {
                         "desc":"blank",
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "https://www.crossui.com"
+                            "https://maker.ifttt.com/trigger/100/with/key/cZhURO8ZUCy_fBKz5hotEe"
                         ],
                         "method":"open--_blank"
                     }
@@ -124,14 +124,14 @@ xui.Class('App', 'xui.Module',{
                 .setTop("6.666666666666667em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("Email Test")
+                .setCaption("50%")
                 .onClick([
                     {
                         "desc":"email",
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "linb@crossui.com"
+                            "https://maker.ifttt.com/trigger/50/with/key/cZhURO8ZUCy_fBKz5hotEe"
                         ],
                         "method":"mailTo"
                     }
@@ -146,14 +146,14 @@ xui.Class('App', 'xui.Module',{
                 .setTop("6.666666666666667em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("Email Test")
+                .setCaption("20%")
                 .onClick([
                     {
                         "desc":"email",
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "linb@crossui.com"
+                            "https://maker.ifttt.com/trigger/25/with/key/cZhURO8ZUCy_fBKz5hotEe"
                         ],
                         "method":"mailTo"
                     }
