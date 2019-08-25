@@ -48,8 +48,8 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"ctl_pane39")
                 .setShowEffects("Blur")
                 .setHideEffects("Blur")
-                .setLeft("23.333333333333332em")
-                .setTop("5em")
+                .setLeft("30em")
+                .setTop("13.333333333333334em")
                 .setWidth("30.833333333333332em")
                 .setHeight("20.833333333333332em")
                 .setCustomStyle({
@@ -74,22 +74,25 @@ xui.Class('App', 'xui.Module',{
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"ctl_htmlbutton6")
-                .setDesc("URL Test 1")
-                .setLeft("4.916666666666667em")
-                .setTop("0.8333333333333334em")
+                .setDesc("ON/OFF")
+                .setLeft("9.916666666666666em")
+                .setTop("0.9166666666666666em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("URL Test 1")
+                .setCaption("ON/OFF")
                 .onClick([
                     {
                         "desc":"self",
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "https://www.crossui.com"
+                            "https://maker.ifttt.com/trigger/switch/with/key/cZhURO8ZUCy_fBKz5hotEe
+
+"
                         ],
                         "method":"open--_self"
-                    }
+                    },
+                    "_ctl_htmlbutton6_onclick"
                 ])
             );
             
@@ -159,28 +162,6 @@ xui.Class('App', 'xui.Module',{
                 ])
             );
             
-            host.ctl_group1.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton48")
-                .setDesc("URL Test 1")
-                .setLeft("14.916666666666666em")
-                .setTop("0.8333333333333334em")
-                .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
-                .setCaption("URL Test 1")
-                .onClick([
-                    {
-                        "desc":"self",
-                        "type":"other",
-                        "target":"url",
-                        "params":[
-                            "https://www.crossui.com"
-                        ],
-                        "method":"open--_self"
-                    }
-                ])
-            );
-            
             host.ctl_pane39.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"ctl_slabel8")
@@ -239,6 +220,16 @@ xui.Class('App', 'xui.Module',{
                  "method":"message"
                 }
             ]
-        }
+        },
+            /**
+         * Fired when user click it
+         * @method onClick [xui.UI.HTMLButton event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+        */
+            _ctl_htmlbutton6_onclick:function(profile, e, src){
+                var ns = this, uictrl = profile.boxing();
+            }
     }
 });
