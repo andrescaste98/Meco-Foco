@@ -73,6 +73,37 @@ xui.Class('App', 'xui.Module',{
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton17")
+                .setDesc("0%")
+                .setLeft("24.166666666666668em")
+                .setTop("0em")
+                .setWidth("3.3333333333333335em")
+                .setHeight("2.5em")
+                .setZIndex(0)
+                .setCaption("")
+                .onClick([
+                    {
+                        "desc":"blank",
+                        "type":"other",
+                        "target":"url",
+                        "params":[
+                            "https://maker.ifttt.com/trigger/100/with/key/cZhURO8ZUCy_fBKz5hotEe"
+                        ],
+                        "method":"open--_blank"
+                    }
+                ])
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#000000",
+                        "background-color":"#000000",
+                        "background-position":"-0px -0px",
+                        "opacity":0
+                    }
+                })
+            );
+            
+            host.ctl_group1.append(
+                xui.create("xui.UI.HTMLButton")
                 .setHost(host,"ctl_htmlbutton6")
                 .setDesc("ON/OFF")
                 .setLeft("9.916666666666666em")
