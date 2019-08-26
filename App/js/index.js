@@ -117,7 +117,7 @@ xui.Class('App', 'xui.Module',{
                         "type":"other",
                         "target":"url",
                         "params":[
-                            "https://maker.ifttt.com/trigger/interruptor/with/key/cZhURO8ZUCy_fBKz5hotEe"
+                            "curl -X POST https://maker.ifttt.com/trigger/interruptor/with/key/cZhURO8ZUCy_fBKz5hotEe"
                         ],
                         "method":"open--_self"
                     },
